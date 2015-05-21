@@ -9,4 +9,11 @@ describe Bike do
     
   end
 
+  it "should be able to be broken" do
+    bike = Bike.new
+    bike.break
+    expect(bike.broken?).to be true
+    
+  end
+
 end
